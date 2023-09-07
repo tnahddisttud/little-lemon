@@ -12,7 +12,7 @@ def index(request):
     return render(request, 'index.html', {})
 
 
-# Create your views here
+# Create your views here. 
 class MenuItemsView(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated]
     queryset = Menu.objects.all()
